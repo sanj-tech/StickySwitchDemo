@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/btnGSTDetails"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Working on buttons property"
+        android:textAllCaps="false"
+        android:textColor="#B51C1C"
+        android:textSize="30sp"
+        android:textStyle="italic"
+
+        app:fontFamily="cursive"
+        tools:ignore="HardcodedText" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        tools:ignore="MissingClass">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:id="@+id/btnOk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:backgroundTint="#FF6F00"
+                android:text="I am button one" />
+
+            <Button
+                android:id="@+id/btnPink"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="110dp"
+                android:backgroundTint="#FF6F00"
+                android:text="I am button Two" />
+
+            <Button
+                android:id="@+id/btncolor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="160dp"
+                android:backgroundTint="#FF6F00"
+                android:text="I am button Three" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <io.ghyeok.stickyswitch.widget.StickySwitch
+        android:id="@+id/rgGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:ss_animationDuration="600"
+        app:ss_animationType="line"
+        app:ss_iconPadding="18dp"
+        app:ss_iconSize="22dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        app:ss_leftIcon="@drawable/male"
+        app:ss_leftText="Male"
+        app:ss_rightIcon="@drawable/female"
+        app:ss_rightText="Female"
+        app:ss_selectedTextSize="14sp"
+        app:ss_sliderBackgroundColor="#BF3939"
+        app:ss_switchColor="#FF6F00"
+        app:ss_textColor="#287E81"
+        app:ss_textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="232dp"
+        android:orientation="vertical">
+
+    </LinearLayout>
+</LinearLayout>
